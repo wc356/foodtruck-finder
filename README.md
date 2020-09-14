@@ -1,4 +1,4 @@
-# Redfin Take-home Assignment
+# Foodtruck Finder
 
 A Node.js based CLI program that fetches currently open food trucks data in JSON format through [Socrata Open Data API](https://dev.socrata.com/).
 

@@ -1,5 +1,5 @@
 {
-  "name": "redfin-worksample",
+  "name": "foodtruck-finder",
   "version": "1.0.0",
   "description": "",
   "main": "bin/FoodTruckFinder.js",
@@ -17,7 +17,6 @@
   "license": "ISC",
   "keywords": [
     "foodtruck",
-    "foodtrucks",
-    "Redfin"
+    "foodtrucks"
   ]
 }

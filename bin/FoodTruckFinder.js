@@ -12,6 +12,7 @@ const rl = readline.createInterface(process.stdin, process.stdout);
 const date = new Date();
 const day = date.getDay();
 const time24 = date.toTimeString().slice(0, 5);
+const dateTimeStr = date.toDateString().slice(0, 10);
 let offsetCount = 0; // Keeps count of offset for paginating results
 
 // Enumerations for commonly used, fixed values
@@ -107,6 +108,7 @@ function app(url) {
     .get(url, { params })
     .then((res) => {
       !res.data.length && handleUserInput({ isResultEmpty: true });
+      console.log(`${dateTimeStr}, ${time24}`);
       listFoodTrucks(res.data);
       handleUserInput({ isResultEmpty: false });
     })
